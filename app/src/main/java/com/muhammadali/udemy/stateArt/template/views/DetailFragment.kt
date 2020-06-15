@@ -1,4 +1,4 @@
-package com.muhammadali.udemy.jetpack.databinding.views
+package com.muhammadali.udemy.stateArt.template.views
 
 import android.app.AlertDialog
 import android.app.PendingIntent
@@ -12,18 +12,17 @@ import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.Navigation
 import androidx.palette.graphics.Palette
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
-import com.muhammadali.udemy.jetpack.databinding.R
-import com.muhammadali.udemy.jetpack.databinding.databinding.DetailLayoutBinding
-import com.muhammadali.udemy.jetpack.databinding.databinding.DialogSendSmsBinding
-import com.muhammadali.udemy.jetpack.databinding.model.DogBreed
-import com.muhammadali.udemy.jetpack.databinding.model.DogPalette
-import com.muhammadali.udemy.jetpack.databinding.model.SmsInfo
-import com.muhammadali.udemy.jetpack.databinding.viewModel.DetailViewModel
+import com.muhammadali.udemy.stateArt.template.R
+import com.muhammadali.udemy.stateArt.template.databinding.DetailLayoutBinding
+import com.muhammadali.udemy.stateArt.template.databinding.DialogSendSmsBinding
+import com.muhammadali.udemy.stateArt.template.model.DogBreed
+import com.muhammadali.udemy.stateArt.template.model.DogPalette
+import com.muhammadali.udemy.stateArt.template.model.SmsInfo
+import com.muhammadali.udemy.stateArt.template.viewModel.DetailViewModel
 
 /**
  * A simple [Fragment] subclass.

@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.muhammadali.udemy.jetpack.databinding.views.ListFragment"
+        android:name="com.muhammadali.udemy.stateArt.template.views.ListFragment"
         android:label="ListFragment">
         <action
             android:id="@+id/action_listFragment_to_detailFragment"
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.muhammadali.udemy.jetpack.databinding.views.DetailFragment"
+        android:name="com.muhammadali.udemy.stateArt.template.views.DetailFragment"
         android:label="DetailFragment">
         <action
             android:id="@+id/action_detailFragment_to_listFragment"
@@ -29,6 +29,6 @@
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.muhammadali.udemy.jetpack.databinding.views.SettingsFragment"
+        android:name="com.muhammadali.udemy.stateArt.template.views.SettingsFragment"
         android:label="SettingsFragment" />
 </navigation>

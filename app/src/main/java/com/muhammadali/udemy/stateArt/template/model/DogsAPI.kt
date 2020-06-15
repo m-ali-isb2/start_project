@@ -1,4 +1,4 @@
-package com.muhammadali.udemy.jetpack.databinding.model
+package com.muhammadali.udemy.stateArt.template.model
 
 import io.reactivex.Single
 import retrofit2.http.GET

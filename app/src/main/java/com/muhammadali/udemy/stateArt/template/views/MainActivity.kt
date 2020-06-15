@@ -1,4 +1,4 @@
-package com.muhammadali.udemy.jetpack.databinding.views
+package com.muhammadali.udemy.stateArt.template.views
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -10,8 +10,8 @@ import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
-import com.muhammadali.udemy.jetpack.databinding.R
-import com.muhammadali.udemy.jetpack.databinding.utils.REQUEST_CODE_SEND_SMS
+import com.muhammadali.udemy.stateArt.template.R
+import com.muhammadali.udemy.stateArt.template.utils.REQUEST_CODE_SEND_SMS
 import kotlinx.android.synthetic.main.activity_main.*
 
 

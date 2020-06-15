@@ -1,4 +1,4 @@
-package com.muhammadali.udemy.jetpack.databinding.model
+package com.muhammadali.udemy.stateArt.template.model
 
 import android.os.Parcel
 import android.os.Parcelable

@@ -1,8 +1,7 @@
-package com.muhammadali.udemy.jetpack.databinding.views
+package com.muhammadali.udemy.stateArt.template.views
 
 import android.view.View
-import android.widget.ImageView
-import com.muhammadali.udemy.jetpack.databinding.model.DogBreed
+import com.muhammadali.udemy.stateArt.template.model.DogBreed
 
 /**
  * Created by Muhammad Ali on 20-May-20.

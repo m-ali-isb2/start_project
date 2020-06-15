@@ -1,4 +1,4 @@
-package com.muhammadali.udemy.jetpack.databinding.utils
+package com.muhammadali.udemy.stateArt.template.utils
 
 import android.content.Context
 import android.widget.ImageView
@@ -6,7 +6,7 @@ import androidx.databinding.BindingAdapter
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.muhammadali.udemy.jetpack.databinding.R
+import com.muhammadali.udemy.stateArt.template.R
 
 
 /**

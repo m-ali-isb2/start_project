@@ -1,6 +1,5 @@
-package com.muhammadali.udemy.jetpack.databinding.utils
+package com.muhammadali.udemy.stateArt.template.utils
 
-import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
@@ -10,9 +9,8 @@ import android.graphics.BitmapFactory
 import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
-import com.muhammadali.udemy.jetpack.databinding.R
-import com.muhammadali.udemy.jetpack.databinding.views.MainActivity
-import kotlinx.coroutines.newFixedThreadPoolContext
+import com.muhammadali.udemy.stateArt.template.R
+import com.muhammadali.udemy.stateArt.template.views.MainActivity
 
 /**
  * Created by Muhammad Ali on 21-May-20.

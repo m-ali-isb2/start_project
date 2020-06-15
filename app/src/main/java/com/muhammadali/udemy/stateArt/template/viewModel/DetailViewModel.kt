@@ -1,9 +1,9 @@
-package com.muhammadali.udemy.jetpack.databinding.viewModel
+package com.muhammadali.udemy.stateArt.template.viewModel
 
 import android.app.Application
 import androidx.lifecycle.MutableLiveData
-import com.muhammadali.udemy.jetpack.databinding.model.DogBreed
-import com.muhammadali.udemy.jetpack.databinding.model.DogDatabase
+import com.muhammadali.udemy.stateArt.template.model.DogBreed
+import com.muhammadali.udemy.stateArt.template.model.DogDatabase
 import kotlinx.coroutines.launch
 
 /**
