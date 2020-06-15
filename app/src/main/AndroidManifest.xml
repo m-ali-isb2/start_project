@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.muhammadali.udemy.jetpack.databinding">
+    package="com.muhammadali.udemy.stateArt.template">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SEND_SMS" />
@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.muhammadali.udemy.jetpack.databinding.views.MainActivity">
+        <activity android:name="com.muhammadali.udemy.stateArt.template.views.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

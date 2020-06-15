@@ -6,11 +6,11 @@
 
         <variable
             name="dog"
-            type="com.muhammadali.udemy.jetpack.databinding.model.DogBreed" />
+            type="com.muhammadali.udemy.stateArt.template.model.DogBreed" />
 
         <variable
             name="palette"
-            type="com.muhammadali.udemy.jetpack.databinding.model.DogPalette" />
+            type="com.muhammadali.udemy.stateArt.template.model.DogPalette" />
 
     </data>
 

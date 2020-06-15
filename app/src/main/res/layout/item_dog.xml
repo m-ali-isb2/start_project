@@ -5,11 +5,11 @@
 
         <variable
             name="dog"
-            type="com.muhammadali.udemy.jetpack.databinding.model.DogBreed" />
+            type="com.muhammadali.udemy.stateArt.template.model.DogBreed" />
 
         <variable
             name="dogListener"
-            type="com.muhammadali.udemy.jetpack.databinding.views.DogClickListeners" />
+            type="com.muhammadali.udemy.stateArt.template.views.DogClickListeners" />
     </data>
 
     <LinearLayout

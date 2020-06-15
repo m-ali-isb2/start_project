@@ -1,13 +1,9 @@
-package com.muhammadali.udemy.jetpack.databinding.views
+package com.muhammadali.udemy.stateArt.template.views
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.TextView
 import androidx.preference.PreferenceFragmentCompat
-import com.muhammadali.udemy.jetpack.databinding.R
+import com.muhammadali.udemy.stateArt.template.R
 
 /**
  * A simple [Fragment] subclass.

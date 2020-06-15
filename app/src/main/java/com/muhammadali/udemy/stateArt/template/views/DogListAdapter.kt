@@ -1,4 +1,4 @@
-package com.muhammadali.udemy.jetpack.databinding.views
+package com.muhammadali.udemy.stateArt.template.views
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,12 +6,9 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
-import com.muhammadali.udemy.jetpack.databinding.R
-import com.muhammadali.udemy.jetpack.databinding.databinding.ItemDogBinding
-import com.muhammadali.udemy.jetpack.databinding.model.DogBreed
-import com.muhammadali.udemy.jetpack.databinding.utils.getProgressDrawable
-import com.muhammadali.udemy.jetpack.databinding.utils.loadImage
-import kotlinx.android.synthetic.main.item_dog.view.*
+import com.muhammadali.udemy.stateArt.template.R
+import com.muhammadali.udemy.stateArt.template.databinding.ItemDogBinding
+import com.muhammadali.udemy.stateArt.template.model.DogBreed
 
 /**
  * Created by Muhammad Ali on 29-Apr-20.

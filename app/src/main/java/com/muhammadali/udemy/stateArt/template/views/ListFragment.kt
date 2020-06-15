@@ -1,4 +1,4 @@
-package com.muhammadali.udemy.jetpack.databinding.views
+package com.muhammadali.udemy.stateArt.template.views
 
 import android.os.Bundle
 import android.view.*
@@ -9,9 +9,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.muhammadali.udemy.jetpack.databinding.R
-import com.muhammadali.udemy.jetpack.databinding.model.DogBreed
-import com.muhammadali.udemy.jetpack.databinding.viewModel.ListViewModel
+import com.muhammadali.udemy.stateArt.template.R
+import com.muhammadali.udemy.stateArt.template.model.DogBreed
+import com.muhammadali.udemy.stateArt.template.viewModel.ListViewModel
 import kotlinx.android.synthetic.main.fragment_list.*
 
 

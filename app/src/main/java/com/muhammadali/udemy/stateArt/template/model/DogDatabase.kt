@@ -1,4 +1,4 @@
-package com.muhammadali.udemy.jetpack.databinding.model
+package com.muhammadali.udemy.stateArt.template.model
 
 import android.content.Context
 import androidx.room.Database

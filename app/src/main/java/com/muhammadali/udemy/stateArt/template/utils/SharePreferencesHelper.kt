@@ -1,4 +1,4 @@
-package com.muhammadali.udemy.jetpack.databinding.utils
+package com.muhammadali.udemy.stateArt.template.utils
 
 import android.content.Context
 import android.content.SharedPreferences

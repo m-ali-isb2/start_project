@@ -1,4 +1,4 @@
-package com.muhammadali.udemy.jetpack.databinding.viewModel
+package com.muhammadali.udemy.stateArt.template.viewModel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

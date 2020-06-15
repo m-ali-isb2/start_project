@@ -1,4 +1,4 @@
-package com.muhammadali.udemy.jetpack.databinding
+package com.muhammadali.udemy.stateArt.template
 
 import org.junit.Test
 
