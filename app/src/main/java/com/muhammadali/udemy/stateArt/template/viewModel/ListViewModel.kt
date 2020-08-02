@@ -3,6 +3,10 @@ package com.muhammadali.udemy.stateArt.template.viewModel
 import android.app.Application
 import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
+import com.muhammadali.udemy.stateArt.template.di.AppModule
+import com.muhammadali.udemy.stateArt.template.di.CONTEXT_APP
+import com.muhammadali.udemy.stateArt.template.di.DaggerServiceComponent
+import com.muhammadali.udemy.stateArt.template.di.typeOfContext
 import com.muhammadali.udemy.stateArt.template.model.DogBreed
 import com.muhammadali.udemy.stateArt.template.model.DogDao
 import com.muhammadali.udemy.stateArt.template.model.DogDatabase
@@ -15,6 +19,7 @@ import io.reactivex.observers.DisposableSingleObserver
 import io.reactivex.schedulers.Schedulers
 import kotlinx.coroutines.launch
 import java.lang.NumberFormatException
+import javax.inject.Inject
 
 /**
  * Created by Muhammad Ali on 04-May-20.
@@ -22,11 +27,22 @@ import java.lang.NumberFormatException
  */
 class ListViewModel(application: Application) : BaseViewModel(application) {
 
-    private val prefsHelper = SharePreferencesHelper(getApplication())
+
+    @Inject
+    @field:typeOfContext(CONTEXT_APP)
+    lateinit var prefsHelper: SharePreferencesHelper
     private var refreshTime = 2 * 60 * 1000 * 1000 * 1000L
 
-    private val dogsService = DogsService()
+    @Inject
+    lateinit var dogsService: DogsService
     private val disposable = CompositeDisposable()
+
+    init {
+        DaggerServiceComponent.builder()
+            .appModule(AppModule(getApplication()))
+            .build()
+            .injectViewModel(this)
+    }
 
 
     val dogs = MutableLiveData<List<DogBreed>>()
