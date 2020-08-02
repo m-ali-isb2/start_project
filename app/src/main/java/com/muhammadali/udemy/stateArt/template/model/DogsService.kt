@@ -1,9 +1,11 @@
 package com.muhammadali.udemy.stateArt.template.model
 
+import com.muhammadali.udemy.stateArt.template.di.DaggerAPIComponent
 import io.reactivex.Single
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Inject
 
 /**
  * Created by Muhammad Ali on 05-May-20.
@@ -12,14 +14,12 @@ import retrofit2.converter.gson.GsonConverterFactory
 class DogsService {
 
 
-    private val BASE_URL = "https://raw.githubusercontent.com/"
+    @Inject
+    lateinit var api : DogsAPI
 
-    private val api = Retrofit.Builder()
-        .baseUrl(BASE_URL)
-        .addConverterFactory(GsonConverterFactory.create())
-        .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-        .build()
-        .create(DogsAPI::class.java)
+    init {
+        DaggerAPIComponent.create().injectAPI(this)
+    }
 
     fun getDogs(): Single<List<DogBreed>> {
         return api.getDogs()
