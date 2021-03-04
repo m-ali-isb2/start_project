@@ -6,11 +6,11 @@
 
         <variable
             name="dog"
-            type="com.muhammadali.udemy.stateArt.template.model.DogBreed" />
+            type="com.jsbl.genix.model.DogBreed" />
 
         <variable
             name="palette"
-            type="com.muhammadali.udemy.stateArt.template.model.DogPalette" />
+            type="com.jsbl.genix.model.DogPalette" />
 
     </data>
 
