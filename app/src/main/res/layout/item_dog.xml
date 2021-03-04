@@ -5,11 +5,11 @@
 
         <variable
             name="dog"
-            type="com.jsbl.genix.model.DogBreed" />
+            type="com.ma.example.model.DogBreed" />
 
         <variable
             name="dogListener"
-            type="com.jsbl.genix.views.DogClickListeners" />
+            type="com.ma.example.views.DogClickListeners" />
     </data>
 
     <LinearLayout
