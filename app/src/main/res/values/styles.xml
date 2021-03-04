@@ -1,23 +1,183 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Base application theme. -->
+  <!--  &lt;!&ndash; Base application theme. &ndash;&gt;
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>-->
+
+
+    <declare-styleable name="StickerView">
+        <attr name="showIcons" format="boolean" />
+        <attr name="showBorder" format="boolean" />
+        <attr name="bringToFrontCurrentSticker" format="boolean" />
+        <attr name="borderColor" format="color" />
+        <attr name="borderAlpha" format="integer" />
+    </declare-styleable>
+
+    <!--    TextStyles-->
+
+    <style name="fontFamily">
+        <!--<item name="fontFamily">@font/roboto_light</item>-->
     </style>
 
+    <style name="fontFamilyBold">
+        <!--<item name="fontFamily">@font/roboto_bold</item>-->
+    </style>
 
-    <style name="name">
-        <item name="android:textSize">18sp</item>
+    <style name="textStyleHeading" parent="fontFamily">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <!--        <item name="android:textColor">@color/cmOnBackground</item>-->
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/textSize_mlarge</item>
+    </style>
+
+    <style name="textStyleBoldHeading" parent="fontFamilyBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/textSize_large</item>
+    </style>
+
+    <style name="textStyleBoldSelectedHeading" parent="textStyleBoldHeading">
+        <item name="android:textColor">?colorOnBackground_55</item>
+    </style>
+
+    <style name="textAdTitle" parent="fontFamily">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/textSize_middle_small</item>
+    </style>
+
+    <style name="textAdBannerTitle" parent="fontFamilyBold">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:textAllCaps">false</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/textSize_middle_small</item>
     </style>
 
-    <style name="body">
-        <item name="android:textSize">14sp</item>
+    <style name="textAdBannerText" parent="textAdBannerTitle">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/textSize_xmedium</item>
     </style>
 
+    <style name="textAdText" parent="textAdTitle">
+        <item name="android:textSize">@dimen/textSize_xmedium</item>
+    </style>
 
+    <style name="textStyleHeading2" parent="fontFamily">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?colorOnBackground</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/textSize_large</item>
+    </style>
 
+    <style name="textStyleHeading3" parent="fontFamily">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?colorOnBackground</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/textSize_middle</item>
+    </style>
+
+    <style name="textStylePowered" parent="fontFamily">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/textSize_middle</item>
+    </style>
+
+    <style name="purchaseTextStylePowered" parent="textStylePowered">
+        <item name="android:textSize">@dimen/textSize_small</item>
+    </style>
+
+    <style name="settingText" parent="textStylePowered">
+        <item name="android:textSize">@dimen/textSize_xmiddle</item>
+    </style>
+
+    <style name="textStylePoweredBold" parent="textStylePowered">
+        <!--<item name="fontFamily">@font/roboto_bold</item>-->
+    </style>
+
+    <style name="textStylePoweredBoldGrey" parent="textStylePoweredBold">
+        <item name="android:textColor">@color/gray_shade_a6</item>
+    </style>
+
+    <style name="textStylePoweredGrey" parent="textStylePowered">
+        <item name="android:textColor">@color/gray_shade_a6</item>
+    </style>
+
+    <style name="NavigationTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAllCaps">false</item>
+<!--        <item name="fontFamily">@font/roboto_bold</item>-->
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="editSearch" parent="fontFamily">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:background">@drawable/edit_search_background</item>
+        <item name="android:drawableStart">@drawable/ic_gallery_edit_search3</item>-->
+        <!--<item name="android:drawableTint">?attr/colorOnBackground</item>-->
+        <item name="android:drawablePadding">@dimen/_10sdp</item>
+        <item name="android:maxLines">1</item>
+        <!--<item name="android:elevation">@dimen/_3sdp</item>-->
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:textColor">@color/drawable_gray</item>
+        <item name="android:textColorHint">@color/drawable_gray</item>
+        <item name="android:textSize">@dimen/textSize_middle</item>
+    </style>
+
+    <style name="editSearch2" parent="fontFamily">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:background">@drawable/edit_search_background_round</item>
+        <item name="android:drawableStart">@drawable/ic_google_icon_two</item>-->
+        <item name="android:maxLines">1</item>
+        <!--<item name="android:elevation">@dimen/_3sdp</item>-->
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:textColor">@color/drawable_gray</item>
+        <item name="android:textColorHint">@color/drawable_gray</item>
+        <item name="android:textSize">@dimen/textSize_middle</item>
+    </style>
+
+    <style name="button_style" parent="fontFamilyBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:background">@drawable/bg_button</item>-->
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">@dimen/_30sdp</item>
+        <item name="android:paddingEnd">@dimen/_30sdp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textSize">@dimen/textSize_middle</item>
+        <item name="android:layout_marginTop">@dimen/_20sdp</item>
+    </style>
+
+    <style name="settingViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_35sdp</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+    </style>
+
+    <style name="settingIconStyle">
+        <item name="android:layout_width">@dimen/_25sdp</item>
+        <item name="android:layout_height">@dimen/_25sdp</item>
+        <item name="android:layout_marginStart">@dimen/_20sdp</item>
+    </style>
+
+    <style name="settingBulletStyle">
+        <item name="android:layout_width">@dimen/_12sdp</item>
+        <item name="android:layout_height">@dimen/_12sdp</item>
+        <item name="android:layout_marginStart">@dimen/_20sdp</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+    </style>
 </resources>

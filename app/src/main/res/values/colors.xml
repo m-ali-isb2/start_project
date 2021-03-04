@@ -1,6 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2962ff</color>
-    <color name="colorPrimaryDark">#2962ff</color>
-    <color name="colorAccent">#2962ff</color>
+    <!-- Light Colors-->
+    <color name="cmBackground">#fafafa</color>
+    <color name="cmBackground_cc">#ccfafafa</color>
+    <color name="cmSurface">#fbfbfb</color>
+    <color name="cmError">#a00037</color>
+    <color name="cmPrimary">#1492E6</color>
+    <color name="cmPrimaryD">#0C5587</color>
+    <color name="cmPrimaryV">#048CE6</color>
+    <color name="cmPrimary_aa">#AA1492E6</color>
+    <color name="cmPrimary_80">#801492E6</color>
+    <color name="cmPrimary_55">#551492E6</color>
+    <color name="cmPrimary_10">#111492E6</color>
+    <color name="cmSecondary">#F564FF</color>
+    <color name="cmSecondaryV">#F349FF</color>
+    <color name="cmSecondary_aa">#AAF564FF</color>
+    <color name="cmSecondary_80">#80F564FF</color>
+    <color name="secondaryTextColor">#ffffff</color>
+
+    <color name="cmOnBackground">@color/cmPrimary</color>
+    <color name="cmOnSurface">@color/black</color>
+    <color name="cmOnError">@color/white</color>
+    <color name="cmOnPrimary">@color/white</color>
+    <color name="cmOnSecondary">@color/white</color>
+
+
+    <!-- Dark Colors-->
+    <color name="cmBackgroundDark">#1E1E1E</color>
+    <color name="cmBackgroundDark_cc">#cc1E1E1E</color>
+    <color name="cmSurfaceDark">#292929</color>
+    <color name="cmErrorDark">#a00037</color>
+    <color name="cmPrimaryDark">#1492E6</color>
+    <color name="cmPrimaryDarkD">#0C5587</color>
+    <color name="cmPrimaryDarkV">#048CE6</color>
+    <color name="cmPrimaryDark_aa">#AA1492E6</color>
+    <color name="cmPrimaryDark_80">#801492E6</color>
+    <color name="cmPrimaryDark_55">#551492E6</color>
+    <color name="cmPrimaryDark_10">#111492E6</color>
+    <color name="cmSecondaryDark">#F564FF</color>
+    <color name="cmSecondaryDarkV">#F349FF</color>
+    <color name="cmSecondaryDark_aa">#AAF564FF</color>
+    <color name="cmSecondaryDark_80">#80F564FF</color>
+
+    <color name="cmOnBackgroundDark">#fafafa</color>
+    <color name="cmOnSurfaceDark">#F7F7F7</color>
+    <color name="cmOnErrorDark">#a00037</color>
+    <color name="cmOnPrimaryDark">#1492E6</color>
+    <color name="cmOnSecondaryDark">#F564FF</color>
+
+    <!--Other colors-->
+
+    <color name="white">#ffffff</color>
+    <color name="white_74">#74FFFFFF</color>
+    <color name="white_66">#66FFFFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="black_ee">#ee000000</color>
+    <color name="package_unselected_back">#eee</color>
+    <color name="package_unselected_stroke">#dfdddd</color>
+    <color name="package_unselectedDark_back">#262626</color>
+    <color name="package_unselectedDark_stroke">#373737</color>
+
+    <color name="gray_shade_69">#696969</color>
+    <color name="gray_shade_c1">#c1c1c1</color>
+    <color name="gray_shade_e8">#e8e8e8</color>
+    <color name="gray_shade_a6">#a6a6a6</color>
+
+    <color name="frontalAdjust">#838383</color>
+    <color name="golden">#FFC107</color>
+    <color name="newred">#3395ff</color>
+    <array name="colors_rgbfragment">
+        <item>@color/golden</item>
+    </array>
+    <color name="transparent">#00000000</color>
+    <color name="drawable_gray">#707070</color>
+
+    <attr name="cmBackground" format="color" />
+    <attr name="cmBackground_cc" format="color" />
+    <attr name="cmBackground_cc_transparent" format="color" />
+    <attr name="colorOnBackground_55" format="color" />
+    <attr name="colorOnBackground_80" format="color" />
+    <attr name="package_unselected_back" format="color" />
+    <attr name="package_unselected_stroke" format="color" />
+    <!-- <attr name="cmBackground" format="color" />
+     <attr name="cmBackground" format="color" />-->
+
+
 </resources>
