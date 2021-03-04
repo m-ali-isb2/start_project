@@ -6,11 +6,11 @@
 
         <variable
             name="dog"
-            type="com.jsbl.genix.model.DogBreed" />
+            type="com.ma.example.model.DogBreed" />
 
         <variable
             name="palette"
-            type="com.jsbl.genix.model.DogPalette" />
+            type="com.ma.example.model.DogPalette" />
 
     </data>
 

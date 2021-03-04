@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.jsbl.genix.views.ListFragment"
+        android:name="com.ma.example.views.ListFragment"
         android:label="ListFragment">
         <action
             android:id="@+id/action_listFragment_to_detailFragment"
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.jsbl.genix.views.DetailFragment"
+        android:name="com.ma.example.views.DetailFragment"
         android:label="DetailFragment">
         <action
             android:id="@+id/action_detailFragment_to_listFragment"
@@ -29,6 +29,6 @@
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.jsbl.genix.views.SettingsFragment"
+        android:name="com.ma.example.views.SettingsFragment"
         android:label="SettingsFragment" />
 </navigation>
